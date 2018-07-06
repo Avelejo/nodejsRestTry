@@ -32,7 +32,7 @@ app.post('/login', (req, res) => {
             return res.status(400).json({ // devolvemos error si no encontramos ese usuario
                 ok: false,
                 err: {
-                    message: '+Usuario o contraseña incorrectos'
+                    message: 'Usuario o contraseña incorrectos'
                 }
             });
         }
@@ -41,7 +41,7 @@ app.post('/login', (req, res) => {
             return res.status(400).json({ //devolvemos error si son distintas
                 ok: false,
                 err: {
-                    message: 'Usuario o +contraseña incorrectos'
+                    message: 'Usuario o contraseña incorrectos'
                 }
             });
         }
